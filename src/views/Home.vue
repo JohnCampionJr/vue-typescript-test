@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
     {{ test }}
+    {{ myModule.count }}
   </div>
 </template>
 
@@ -10,7 +11,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import { getModule } from 'vuex-module-decorators';
-// import { CounterModule } from '@/modules/CounterModule.ts';
+import { MyModule } from '@/store';
 
 @Component({
   components: {
@@ -19,9 +20,9 @@ import { getModule } from 'vuex-module-decorators';
 })
 export default class Home extends Vue {
   public test: string = 'tester';
-  // public counterModule = getModule(CounterModule);
+  public myModule = getModule(MyModule, this.$store);
   public mounted() {
-    // CounterModule.increment(5);
+    this.myModule.incrCount(5);
   }
 }
 </script>

@@ -1,4 +1,4 @@
-import Vuex, { Module as Mod } from 'vuex';
+import Vuex from 'vuex';
 import Vue from 'vue';
 Vue.use(Vuex);
 import { Action, Module, Mutation, MutationAction, VuexModule, getModule } from 'vuex-module-decorators';
@@ -8,7 +8,7 @@ interface StoreType {
 }
 
 @Module({ name: 'mm' })
-class MyModule extends VuexModule {
+export class MyModule extends VuexModule {
     public count = 0;
 
     @Mutation
