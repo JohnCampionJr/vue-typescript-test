@@ -11,7 +11,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import { getModule } from 'vuex-module-decorators';
-import { MyModule } from '@/store';
+import MyModule from '@/store/myModule';
 
 @Component({
   components: {
