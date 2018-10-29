@@ -1,7 +1,8 @@
 import { Action, Module, Mutation, MutationAction, VuexModule, getModule } from 'vuex-module-decorators';
-import store from '@/store';
+// import store from '@/store';
 
-@Module({ dynamic: true, store, name: 'mm', namespaced: true  })
+@Module({ name: 'mm' })
+// @Module({ dynamic: true, store, name: 'mm', namespaced: true  })
 export default class MyModule extends VuexModule {
     public count = 0;
 

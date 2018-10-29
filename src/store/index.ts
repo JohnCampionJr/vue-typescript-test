@@ -13,5 +13,6 @@ const vuexLocal = new VuexPersistence({
 });
 
 export default new Vuex.Store<StoreType>({
+  modules: { mm: MyModule },
   plugins: [vuexLocal.plugin],
 });
