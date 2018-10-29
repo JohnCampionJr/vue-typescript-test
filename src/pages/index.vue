@@ -4,6 +4,9 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     {{ test }}
     {{ myModule.count }}    
+    <b-notification type="is-info">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
+    </b-notification>
   </div>
 </template>
 

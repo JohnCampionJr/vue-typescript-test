@@ -9,6 +9,18 @@
 </template>
 
 <style lang="scss">
+// Use this code if you want to use a bulmaswatch theme or customized bulma
+// Bulma + Bulmaswatch
+@import 'node_modules/bulmaswatch/minty/variables';
+@import 'node_modules/bulma/sass/utilities/_all';
+// Any customized variables here
+// See https://buefy.github.io/documentation/customization for details
+@import 'node_modules/bulma/bulma';
+@import 'node_modules/bulmaswatch/minty/overrides';
+
+// Buefy
+@import 'node_modules/buefy/src/scss/buefy';
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
