@@ -2544,7 +2544,7 @@ fast-diff@^1.1.1:
   resolved "https://registry.yarnpkg.com/fast-diff/-/fast-diff-1.2.0.tgz#73ee11982d86caaf7959828d519cfe927fac5f03"
   integrity sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==
 
-fast-glob@^2.0.2:
+fast-glob@^2.0.2, fast-glob@^2.2.2:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-2.2.3.tgz#d09d378e9ef6b0076a0fa1ba7519d9d4d9699c28"
   integrity sha512-NiX+JXjnx43RzvVFwRWfPKo4U+1BrK5pJPsHQdKMlLoFHrrGktXglQhHliSihWAq+m1z6fHk3uwGHrtRbS9vLA==
@@ -5415,7 +5415,7 @@ prettier@1.13.7:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.13.7.tgz#850f3b8af784a49a6ea2d2eaa7ed1428a34b7281"
   integrity sha512-KIU72UmYPGk4MujZGYMFwinB7lOf2LsDNGSOC8ufevsrPLISrZbNJlWstRi3m0AMuszbH+EFSQ/r6w56RSPK6w==
 
-prettier@^1.12.1:
+prettier@1.14.3, prettier@^1.12.1:
   version "1.14.3"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.3.tgz#90238dd4c0684b7edce5f83b0fb7328e48bd0895"
   integrity sha512-qZDVnCrnpsRJJq5nSsiHCE3BYMED2OtsI+cmzIzF1QIfqm5ALf8tEJcO27zV1gKNKRPdhjO0dNWnrzssDQ1tFg==
@@ -7006,10 +7006,22 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-auto-routing@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/vue-auto-routing/-/vue-auto-routing-0.3.0.tgz#233ce4e180815f79e937414910dae041ee608890"
+  integrity sha512-jYRGNq07tr0kmyZXgC/LvzIF1hza06+Dg3KRlsMuU6fsoq29f4zRVLnI8t+AbvfEGBIRfjT6kjQTHI3NbZT8cg==
+  dependencies:
+    vue-route-generator "^0.3.0"
+
 vue-class-component@^6.0.0, vue-class-component@^6.2.0:
   version "6.3.2"
   resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-6.3.2.tgz#e6037e84d1df2af3bde4f455e50ca1b9eec02be6"
   integrity sha512-cH208IoM+jgZyEf/g7mnFyofwPDJTM/QvBNhYMjqGB8fCsRyTf68rH2ISw/G20tJv+5mIThQ3upKwoL4jLTr1A==
+
+vue-cli-plugin-auto-routing@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-auto-routing/-/vue-cli-plugin-auto-routing-0.2.1.tgz#528d4ce9a2f0b261438fd6dbfa206a4d74891a86"
+  integrity sha512-iV91GY9tmjNKGwy5HbQe5NwGfSFW9ElYED7xtBWq/Dv5Ug6gMsQAzsqFnR5vkKsVAwpcKVYoeapnrA2wOiSBLw==
 
 vue-eslint-parser@^2.0.3:
   version "2.0.3"
@@ -7045,6 +7057,19 @@ vue-property-decorator@^7.0.0:
   integrity sha512-sCI6NVM3tEDg+mpZrQlgkddtxd9LbFWetue8D+nqO3agfSLz0KoC/UIi2P1l5E0TDhcUeIXS9rasuP2HWg+L4w==
   dependencies:
     vue-class-component "^6.2.0"
+
+vue-route-generator@^0.3.0:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/vue-route-generator/-/vue-route-generator-0.3.2.tgz#28ef1a274b0522e81086cba30ababffdcdbd4469"
+  integrity sha512-Q43xTS5IERJcb8BlDqE1QogRbsxMF5xDVtrDoq9n4MpHcqeLemJSrdlnqsgpPEeVm4csDf8FmlH9HZS5229vYg==
+  dependencies:
+    fast-glob "^2.2.2"
+    prettier "1.14.3"
+
+vue-router-layout@^0.1.2:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/vue-router-layout/-/vue-router-layout-0.1.3.tgz#116c51a9fb2873703d405f413ec01126fe2d7a8b"
+  integrity sha512-YfRaznL8RbdepTxrbwRhUCyS6WWc9/OCFye9lowBYq37Mfedp9BDJLpj3s7K4slo3zxko2XIL6nOtu9Xk/wb+Q==
 
 vue-router@^3.0.1:
   version "3.0.1"

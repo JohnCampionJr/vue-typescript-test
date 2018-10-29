@@ -1,9 +1,9 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <img src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
     {{ test }}
-    {{ myModule.count }}
+    {{ myModule.count }}    
   </div>
 </template>
 
