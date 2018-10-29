@@ -1,22 +1,29 @@
-import { Action, Module, Mutation, MutationAction, VuexModule, getModule } from 'vuex-module-decorators';
+import {
+  Action,
+  Module,
+  Mutation,
+  MutationAction,
+  VuexModule,
+  getModule
+} from 'vuex-module-decorators'
 // import store from '@/store';
 
 @Module({ name: 'mm' })
 // @Module({ dynamic: true, store, name: 'mm', namespaced: true  })
 export default class MyModule extends VuexModule {
-    public count = 0;
+  public count = 0
 
-    @Mutation
-    public incrCount(delta: number) {
-        this.count += delta;
-    }
+  @Mutation
+  public incrCount(delta: number) {
+    this.count += delta
+  }
 
-    @Action({ commit: 'incrCount' })
-    public async getCountDelta(retVal: number = 5) {
-        return retVal;
-    }
+  @Action({ commit: 'incrCount' })
+  public async getCountDelta(retVal: number = 5) {
+    return retVal
+  }
 
-    public get halfCount() {
-        return (this.count / 2).toPrecision(1);
-    }
+  public get halfCount() {
+    return (this.count / 2).toPrecision(1)
+  }
 }
